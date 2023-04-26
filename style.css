@@ -2085,16 +2085,19 @@ button:hover{
 
 
 .card-4{
-  width: 100%;
-  height: fit-content;
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
+  animation: talk 1s ease-in-out alternate infinite;
+}
+
+@keyframes talk {
+  0%{ scale: 1.1;}
+  100%{scale: 1;}
 }
 
 .card-4 > a{
-  width: 120px;
-  height: 40px;
   animation-name: hover;
   color: white;
   position: relative;
@@ -2107,11 +2110,7 @@ button:hover{
  
 }
 
-.card-4 > a:hover{
-  scale: 1.1;
-  
-  
-}
+
 
 
 
