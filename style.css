@@ -199,7 +199,6 @@ a {
 .home-box {
   width: 100%;
   height: 450px;
- 
   opacity: 0.7;
   display: flex;
   flex-direction: column;
@@ -255,7 +254,7 @@ a {
   justify-content: center;
   align-items: center;
   gap: 5px;
- padding:5px 10px ;
+ padding:5px 60px ;
 }
 
 
@@ -264,7 +263,9 @@ a {
   .home-container2{
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(2, 3fr);
+    grid-template-columns: repeat(2, 4fr);
+    column-gap: 10px;
+    row-gap: 10px;
 
   }
 
@@ -288,7 +289,7 @@ a {
 
 .home-container2 a >img {
   border-radius: 20px;
-  height: 50px;
+  height: 40px;
   width: 40px;
 }
 
@@ -308,7 +309,6 @@ a {
   gap: 10px;
   padding: 0px 10px;
   margin-top: 20px;
-  
 }
 
 @media screen and (max-width:650px) {
@@ -319,16 +319,24 @@ a {
     row-gap: 10px;
     column-gap: 10px;
   }
-
-  
 }
 
+@media screen and (max-width:768px) {
+  .home-container3{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 4fr);
+    row-gap: 10px;
+    column-gap: 10px;
+  }
+}
+
+
+
 .home-container3 a {
-  width: 110px;
-  height: 50px;
   background-color: whitesmoke;
   color: black;
-  padding: 15px 5px 10px 10px;
+  padding: 15px 25px;
   border-radius: 10px;
   text-align: center;
 }
@@ -360,28 +368,31 @@ a {
   align-items: center;
   margin-top: 30px;
   gap: 20px;
-  padding: 10px;
-
+  padding: 10px 20px;
 }
 
 
 @media screen and (max-width:650px) {
   .home-container4{
-    width: 95%;
+    width: 100%;
     display: grid;
     grid-template-columns: repeat(1, 2fr);
     padding: 10px;
   }
 
-  .home-inner1{
-    width: 90%;
+  .home-container4 >.home-inner1{
+    width: 99%;
+  }
+
+  .home-container4 >.home-inner2{
+    width: 99%;
   }
 }
 
 .home-inner1 {
-  width: 100%;
-  height: 650px;
-  background-color: whitesmoke;
+  width: 60%;
+  height: fit-content;
+  background-color: white;
   border-radius: 10px;
   display: flex;
   justify-content: flex-start;
@@ -389,7 +400,7 @@ a {
   flex-direction: column;
   padding: 5px 20px;
   gap: 10px;
-  box-shadow: 4px 4px 10px red;
+  box-shadow: 0px 0px 10px lightgray;
 
 }
 
@@ -406,16 +417,17 @@ a {
   gap: 10px;
 }
 
-.home-inner1>p:hover {
-  color: blue;
+.home-inner1 ul li{
+  list-style-type: disc;
 }
 
 
 
 
 
+
 .home-inner2 {
-  width: 100%;
+  width: 60%;
   height: 600px;
   background-image: url(https://i.ibb.co/1X7L7Jk/1000019338-1.jpg);
   background-position: center;
@@ -451,7 +463,7 @@ a {
   opacity: 0.7;
   animation-timing-function: 3s ease-in-out;
   animation-iteration-count: infinite;
-  box-shadow: 4px 4px 10px rgb(251, 8, 8);
+  box-shadow: 0px 0px 5px lightgray;
  
 }
 
@@ -474,11 +486,11 @@ a {
 .client-mothercon{
   width: 100%;
   height: fit-content;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(3, 2fr);
   gap: 10px;
-  padding: 10px 20px;
+  padding: 10px 10px;
+
   margin-top: 15px;
 
 }
@@ -489,9 +501,13 @@ a {
     width: 100%;
     display: grid;
     grid-template-columns: repeat(1, 6fr);
-    padding:0px 40px;
+    padding:0px 20px;
     column-gap: 20px;
     row-gap: 20px;
+  }
+
+  .client-mothercon >.client-box{
+    width: 100%;
   }
   
 }
@@ -517,7 +533,7 @@ a {
 .client-box{
   width: 100%;
   height: fit-content;
-  background-color: lightgray;
+  background-color: white;
   color: black;
   display: flex;
   justify-content: center;
@@ -527,18 +543,14 @@ a {
   margin-top: 10px;
   transition: 3s ease-in-out;
   border-radius: 7px;
-  box-shadow: 2px 2px 5px tomato;
+  box-shadow: 0px 0px 10px lightgray;
+  font-size: 15px;
 }
 
 
 .client-box:hover {
   background-color: black;
   color: white;
-  transform: rotate(360deg);
-  border-radius: 100%;
-  font-size: small;
-  padding:40px;
-  text-align: center;
 }
 
 
@@ -581,13 +593,11 @@ a {
 
 .contact-container{
   width: 100%;
-  height: 400px;
+  height: 300px;
   background-color: black;
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
-  border-top-right-radius:15px; 
-  border-top-left-radius:15px; 
   margin-top: 20px;
   padding: 20px;
   gap:10px;
@@ -793,9 +803,8 @@ a {
   align-items: center;
   gap: 10px;
   padding: 10px 70px;
-  margin-top: 40px;
-
-
+  margin-top: 20px;
+  
 }
 
 @media screen and (max-width:650px) {
@@ -804,9 +813,10 @@ a {
     height: 100%;
     display: grid;
     grid-template-columns: repeat(1, 4fr);
-    padding: 100px;
+    padding:10px 100px;
 
   }
+
 }
 
 
@@ -822,8 +832,6 @@ a {
   color: black;
   
 }
-
-
 
 
 
@@ -848,7 +856,7 @@ a {
   align-items: center;
   gap: 15px;
   margin-top: 20px;
-  padding: 0px   45px;
+  padding:5px   10px;
 }
 
 
@@ -859,14 +867,15 @@ a {
     grid-template-columns: repeat(1, 4fr);
   }
 
-  .mission-container .mission-box{
-    width: 100%;
+  .mission-container > .mission-box{
+     width: 100%;
   }
   
 }
 
 .mission-box{
-  width: 70%;
+  background-color: white;
+  width: 100%;
   height: fit-content;
   display: flex;
   justify-content: center;
@@ -874,7 +883,7 @@ a {
   flex-direction: column;
   padding: 10px;
   border-radius: 8px;
-  box-shadow: 2px 2px 5px tomato;
+  box-shadow: 0px 0px 10px lightgray;
 }
 
 
@@ -966,18 +975,21 @@ a {
   flex-direction: column;
   gap: 5px;
   padding: 10px;
-  box-shadow: 2px 2px 5px tomato;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px lightgray;
 
 }
 
 .strategic-container1 .intent-box > h3{
   font-size: 30px;
+  font-style: italic;
 
 }
 
 
 .intent-box > p{
   line-height: 30px;
+  font-style: italic;
 
 }
 
@@ -1059,7 +1071,7 @@ a {
   display: flex;
   align-items: flex-start;
   justify-content: center;
-  padding: 10px 70px;
+  padding: 10px 30px;
 }
 
 .service-container ul > li{
@@ -1146,7 +1158,7 @@ a {
 }
 
 .residential-container >P{
-  padding: 5px 20px;
+  padding: 5px 10px;
 
 }
 
@@ -1168,7 +1180,7 @@ a {
 
 
 .battery-container >P{
-  padding: 5px 20px;
+  padding: 5px 10px;
 }
 
 .industrial-container{
@@ -1189,7 +1201,7 @@ a {
 
 
 .industrial-container >P{
-  padding: 5px 20px;
+  padding: 5px 10px;
 }
 
 
@@ -1262,7 +1274,7 @@ a {
 
 
 .electrical-box >P{
-  padding: 5px 20px;
+  padding: 5px 10px;
 }
 
 
@@ -1335,7 +1347,7 @@ a {
 
 
 .cctv-box >P{
-  padding: 5px 20px;
+  padding: 5px 10px;
 }
 
 
@@ -1406,7 +1418,7 @@ a {
 
 
 .wireless-box >P{
-  padding: 5px 20px;
+  padding: 5px 10px;
 }
 
 
@@ -2189,7 +2201,7 @@ button:hover{
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0px 70px;
+  padding: 0px 10px;
   font-size: large;
   line-height: 30px;
   margin:50px 0px;
@@ -2215,7 +2227,7 @@ button:hover{
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0px 70px;
+  padding: 0px 10px;
   font-size: large;
   line-height: 30px;
   margin:20px 0px;
@@ -2403,7 +2415,7 @@ padding: 10px;
   padding: 10px 40px;
   background-color: white;
   color: black;
-  border: 2px solid tomato;
+  border: 1px solid black;
   margin-top: 20px;
   border-radius: 30px;
 }
