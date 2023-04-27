@@ -775,7 +775,7 @@ a {
 .about-container1{
   width: 100%;
   height: 600px;
-  background-image: url(https://i.ibb.co/FVc443D/pexels-fauxels-3184455.jpg);
+  background-image: url(https://i.ibb.co/Lpcnb6J/pexels-max-rahubovskiy-7534178-1.jpg);
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -790,9 +790,7 @@ a {
 
 }
 
-@keyframes about{
-  0% {background-image: url(https://i.ibb.co/FVc443D/pexels-fauxels-3184455.jpg);}
-}
+
 
 
 .about-box{
@@ -1420,6 +1418,41 @@ a {
 .wireless-box >P{
   padding: 5px 10px;
 }
+
+
+.residential-con{
+  width: 500px;
+  height: 300px;
+  background-image: url(https://i.ibb.co/YLS6Bc1/1000022782-1.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  animation-name:   resident-card;
+  animation-duration: 30s;
+  animation-delay: 2s;
+  animation-timing-function: 10s ease-in-out;
+  position: relative;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  border-radius: 8px;
+  
+}
+
+
+@keyframes resident-card{
+  20%{background-image: url(https://i.ibb.co/t4rfn47/1000022764-1.jpg);}
+
+}
+
+
+@media screen and (max-width:650px) {
+  .residential-con{
+    width: 100%;
+    padding: 0px 5px;
+  }
+  
+}
+
 
 
 .battery-con{
